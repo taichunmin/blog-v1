@@ -14,12 +14,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">首頁</a></li>
+        <li class="active"><a href="/">首頁</a></li>
         <li><a href="/aboutme">關於我</a></li>
-        <li><a href="/aboutme">經歷</a></li>
-        <li><a href="/aboutme">技能</a></li>
-        <li><a href="/aboutme">作品集</a></li>
-        <li><a href="/aboutme">聯絡</a></li>
+        <li><a href="/experiences">經歷</a></li>
+        <li><a href="/skills">技能</a></li>
+        <li><a href="/works">作品集</a></li>
+        <li><a href="/contact">聯絡</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
