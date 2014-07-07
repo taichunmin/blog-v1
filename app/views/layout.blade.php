@@ -21,7 +21,14 @@
   </head>
   <body>
   @include('navbar')
-  @yield('content')
+
+  <div class="container-fluid">
+  @yield('content-fluid', '')
+  </div>
+
+  <div class="container">
+  @yield('content', '')
+  </div>
 
   @section('js')
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
