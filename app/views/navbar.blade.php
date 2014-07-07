@@ -16,6 +16,10 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">首頁</a></li>
         <li><a href="/aboutme">關於我</a></li>
+        <li><a href="/aboutme">經歷</a></li>
+        <li><a href="/aboutme">技能</a></li>
+        <li><a href="/aboutme">作品集</a></li>
+        <li><a href="/aboutme">聯絡</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

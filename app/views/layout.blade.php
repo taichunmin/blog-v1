@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw" class="han-la">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>taichunmin.idv.tw</title>
+
+    <!-- han -->
+    <link href="Han-2.3.0/han.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +40,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Han-2.3.0/js/han.js"></script>
     <script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>
   @show
   </body>
