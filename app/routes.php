@@ -17,5 +17,5 @@ Route::get('/', function()
 });
 
 Route::get('/aboutme', function(){
-	return View::make('hello.blade');
+	return View::make('aboutme.blade');
 });
