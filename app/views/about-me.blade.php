@@ -4,7 +4,7 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-md-4">
-				<img src="images/gavatar_20131117.jpg" alt="和風信使">
+				<img src="images/gavatar_20131117.jpg" alt="和風信使" style="width:150px; height:150px" class="img-circle">
 			</div>
 			<div class="col-md-8">
 				<h1>和風信使</h1>
