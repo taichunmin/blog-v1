@@ -23,3 +23,12 @@
 		</div>
 	</div>
 @stop
+
+@section('css')
+	@parent
+	<style>
+		#about-me-social a.btn{
+			margin-bottom: 3px;
+		}
+	</style>
+@stop
