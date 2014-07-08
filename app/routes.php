@@ -16,6 +16,6 @@ Route::get('/', function()
 	return View::make('about-me');
 });
 
-Route::get('/aboutme', function(){
+Route::get('/about-me', function(){
 	return View::make('about-me');
 });
