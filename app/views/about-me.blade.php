@@ -13,12 +13,12 @@
 				<p>請大家多多指教。</p>
 			</div>
 		<div id="about-me-social" class="col-sm-9 col-sm-offset-3">
-			<a class="btn btn-primary btn-lg" href="http://fb.me/taichunmin" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
-			<a class="btn btn-primary btn-lg" href="https://twitter.com/taichunmin" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
-			<a class="btn btn-primary btn-lg" href="https://www.google.com/+%E6%88%B4%E5%9D%87%E6%B0%91" target="_blank"><span class="fa fa-google-plus fa-2x"></span></a>
-			<a class="btn btn-primary btn-lg" href="https://github.com/taichunmin" target="_blank"><span class="fa fa-github fa-2x"></span></a>
-			<a class="btn btn-primary btn-lg" href="http://bitbucket.taichunmin.idv.tw/" target="_blank"><span class="fa fa-bitbucket fa-2x"></span></a>
-			<a class="btn btn-primary btn-lg" href="https://trello.com/taichunmin" target="_blank"><span class="fa fa-trello fa-2x"></span></a>
+			<a class="btn btn-primary btn-lg" href="http://fb.me/taichunmin" target="_blank"><span class="fa fa-facebook-square fa-2x fa-fw"></span></a>
+			<a class="btn btn-primary btn-lg" href="https://twitter.com/taichunmin" target="_blank"><span class="fa fa-twitter fa-2x fa-fw"></span></a>
+			<a class="btn btn-primary btn-lg" href="https://www.google.com/+%E6%88%B4%E5%9D%87%E6%B0%91" target="_blank"><span class="fa fa-google-plus fa-2x fa-fw"></span></a>
+			<a class="btn btn-primary btn-lg" href="https://github.com/taichunmin" target="_blank"><span class="fa fa-github fa-2x fa-fw"></span></a>
+			<a class="btn btn-primary btn-lg" href="http://bitbucket.taichunmin.idv.tw/" target="_blank"><span class="fa fa-bitbucket fa-2x fa-fw"></span></a>
+			<a class="btn btn-primary btn-lg" href="https://trello.com/taichunmin" target="_blank"><span class="fa fa-trello fa-2x fa-fw"></span></a>
 		</div>
 		</div>
 	</div>
