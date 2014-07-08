@@ -4,6 +4,7 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-sm-3 text-center">
+				<div class="hidden-xs" style="height:20px">&nbsp;</div>
 				<img src="images/gavatar_20131117.jpg" alt="和風信使" style="width:150px; height:150px" class="img-circle">
 			</div>
 			<div class="col-sm-9">
