@@ -20,4 +20,8 @@ Route::get('/about-me', function(){
 	return View::make('about-me');
 });
 
+Route::get('/experiences', function(){
+	return View::make('experiences');
+});
+
 Route::get('/skills', 'SkillsController@getIndex');
