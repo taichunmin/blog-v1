@@ -8,19 +8,19 @@
 		<div class="col-sm-9">
     		@if ( $sk[1] == 1 )
     		<div class="progress">
-    		  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" style="width: 35%; min-width: 30px;">
+    		  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" style="width: 35%; min-width: 30px;">
     		    略懂
     		  </div>
     		</div>
     		@elseif ( $sk[1] == 2 )
 			<div class="progress">
-			  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="4" style="width: 60%">
+			  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="4" style="width: 60%">
 			    中等
 			  </div>
 			</div>
 			@elseif ( $sk[1] == 3 )
 			<div class="progress">
-			  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="4" style="width: 85%">
+			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="4" style="width: 85%">
 			    精通
 			  </div>
 			</div>
