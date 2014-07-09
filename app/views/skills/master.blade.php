@@ -18,6 +18,7 @@
 			white-space: nowrap;
 			text-overflow:ellipsis;
 			overflow: hidden;
+			padding-right: 0;
 		}
 	</style>
 @stop
