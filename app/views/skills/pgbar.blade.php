@@ -4,7 +4,7 @@
   </div>
   <div class="panel-body">
     @foreach ( $skill['data'] as $sk )
-		<div class="col-sm-3 pgbar-title" title="{{{ $sk[0] }}}">{{{ $sk[0] }}}</div>
+		<div class="col-sm-3 pgbar-title" title="{{{ $sk[0] }}}" data-placement="right" data-toggle="tooltip">{{{ $sk[0] }}}</div>
 		<div class="col-sm-9">
     		@if ( $sk[1] == 1 )
     		<div class="progress">

@@ -21,3 +21,10 @@
 		}
 	</style>
 @stop
+
+@section('js')
+	@parent
+	<script>
+	(function($){$(function(){$('[data-toggle="tooltip"]').tooltip()})})(jQuery);
+	</script>
+@stop
