@@ -28,7 +28,7 @@
 	@parent
 	<style>
 		#about-me-social a.btn{
-			margin-bottom: 3px;
+			margin-bottom: 10px;
 			margin-right: 10px;
 			padding: 14px 9px;
 			border-radius: 50%;
