@@ -19,3 +19,5 @@ Route::get('/', function()
 Route::get('/about-me', function(){
 	return View::make('about-me');
 });
+
+Route::get('/skills', 'SkillsController@getIndex');
