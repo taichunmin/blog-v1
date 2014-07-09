@@ -27,6 +27,9 @@
 @section('css')
 	@parent
 	<style>
+		#about-me-social{
+			padding-right: 5px;
+		}
 		#about-me-social a.btn{
 			margin-bottom: 10px;
 			margin-right: 10px;
