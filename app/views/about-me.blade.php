@@ -3,7 +3,7 @@
 @section('content-fluid')
 <?php
 	$otherlinks = [
-		['Email','taichunmin@gmail.com'],
+		['Twitter','https://twitter.com/taichunmin'],
 		['Logdown','http://taichunmin.logdown.com/'],
 		['Pixnet','http://taichunmin.pixnet.net/'],
 		['Hackpad','https://hackpad.com/ep/profile/wk2EBYHTON5'],
@@ -44,7 +44,7 @@
 					</div>
 					<div id="about-me-social" class="col-sm-9 col-sm-offset-3">
 						<a class="btn btn-lg" href="http://fb.me/taichunmin" target="_blank"><span class="fa fa-facebook-square fa-2x fa-fw"></span></a>
-						<a class="btn btn-lg" href="https://twitter.com/taichunmin" target="_blank"><span class="fa fa-twitter fa-2x fa-fw"></span></a>
+						<a class="btn btn-lg" href="mailto:taichunmin@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope fa-2x fa-fw"></span></a>
 						<a class="btn btn-lg" href="https://www.google.com/+%E6%88%B4%E5%9D%87%E6%B0%91" target="_blank"><span class="fa fa-google-plus fa-2x fa-fw"></span></a>
 						<a class="btn btn-lg" href="https://github.com/taichunmin" target="_blank"><span class="fa fa-github fa-2x fa-fw"></span></a>
 						<a class="btn btn-lg" href="http://bitbucket.taichunmin.idv.tw/" target="_blank"><span class="fa fa-bitbucket fa-2x fa-fw"></span></a>
@@ -83,6 +83,8 @@
 			background-color: #ccc;
 			border: 2px solid #ccc;
 			color: #444;
+			width: 68px;
+			height: 68px;
 		}
 		#about-me-social a.btn:hover{
 			border: 2px solid #000;
