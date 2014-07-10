@@ -57,12 +57,26 @@
 
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">開放原始碼授權</h3>
+    <h3 class="panel-title"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;本站授權</h3>
+  </div>
+  <div class="panel-body">
+  	<p>本網站是使用 <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a> 的開放原始碼軟體。</p>
+    <p>The website is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
+    <p>
+    	Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp;&nbsp;&nbsp;&nbsp;TAI, CHUN-MIN &lt;taichunmin@gmail.com&gt;.
+    </p>
+    <p style="margin:0">網站原始碼：<a href="https://github.com/taichunmin/taichunmin.idv.tw" target="_blank">https://github.com/taichunmin/taichunmin.idv.tw</a></p>
+  </div>
+</div>
+
+<div class="panel panel-primary" id="openSources">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="glyphicon glyphicon-road"></span>&nbsp;&nbsp;開放原始碼授權</h3>
   </div>
   <div class="panel-body">
     在這裡列出本站所使用到的開放原始碼資源。
   </div>
-  <ul class="list-group" id="openSources">
+  <ul class="list-group">
 @foreach ( $openSources as $openSource )
   	<li class="list-group-item">
   		<h4 class="list-group-item-heading">
@@ -81,7 +95,11 @@
 @section('css')
 @parent
 <style>
-	#openSources{
+	#openSources>.panel-body{
+		padding: 19px;
+		background-color: #f5f5f5;
+	}
+	#openSources>ul{
 		padding-left: 0; // Overwrite han.css
 	}
 </style>
