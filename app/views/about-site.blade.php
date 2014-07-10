@@ -65,7 +65,7 @@
     <p>
     	Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp;&nbsp;&nbsp;&nbsp;TAI, CHUN-MIN &lt;taichunmin@gmail.com&gt;.
     </p>
-    <p style="margin:0">網站原始碼：<a href="https://github.com/taichunmin/taichunmin.idv.tw" target="_blank">https://github.com/taichunmin/taichunmin.idv.tw</a></p>
+    <p style="margin:0">網站原始碼：<a href="https://github.com/taichunmin/taichunmin.idv.tw" target="_blank">taichunmin/taichunmin.idv.tw (Github)</a></p>
   </div>
 </div>
 
