@@ -17,9 +17,16 @@
 		['Ruten','http://class.ruten.com.tw/user/index00.php?s=taichunmin'],
 		['巴哈姆特','http://home.gamer.com.tw/homeindex.php?owner=taichunmin'],
 		['SPOJ','http://www.spoj.com/users/taichunmin/'],
+		['KKTIX','https://kktix.com/user/taichunmin'],
+		['Murmur','http://murmur.tw/taichunmin'],
+		['Plurk','http://www.plurk.com/taichunmin'],
+		['Koding','https://koding.com/taichunmin'],
+		['Website','http://taichunmin.idv.tw/'],
+		['Zerojudge','http://zerojudge.tw/UserStatistic?account=taichunmin'],
+		['UVa','http://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=20&page=show_authorstats&userid=4530'],
 	];
 	usort( $otherlinks, function($a,$b){
-		return strcmp( $a[0].$a[1], $b[0].$b[1] );
+		return strcmp( strtolower($a[0].$a[1]), strtolower($b[0].$b[1]) );
 	} );
 ?>
 	<div class="row" id="about-me-row">
