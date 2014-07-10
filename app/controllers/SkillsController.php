@@ -4,7 +4,7 @@ class SkillsController extends \BaseController {
 
 	protected $skills = [
 		'web' => [
-			'name' => '網頁程式',
+			'name' => '<span class="glyphicon glyphicon-globe"></span>&nbsp; 網頁程式',
 			'data' => [
 				['PHP'        ,3],
 				['HTML'       ,3],
@@ -16,7 +16,7 @@ class SkillsController extends \BaseController {
 			],
 		],
 		'server' => [
-			'name' => '伺服器',
+			'name' => '<span class="glyphicon glyphicon-hdd"></span>&nbsp; 伺服器',
 			'data' => [
 				['Apache httpd' ,3],
 				['CentOS'       ,3],
@@ -25,7 +25,7 @@ class SkillsController extends \BaseController {
 			],
 		],
 		'programing' => [
-			'name' => '程式語言',
+			'name' => '<span class="glyphicon glyphicon-floppy-saved"></span>&nbsp; 程式語言',
 			'data' => [
 				['C++'           ,3],
 				['C'             ,3],
