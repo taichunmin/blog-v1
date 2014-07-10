@@ -29,6 +29,12 @@
 			'describe' => '「漢字標準格式」是基於樣式「重設」及「標準化」二個概念寫成的CSS3排版框架。由於現今的瀏覽器預設樣式皆以西文顯示為主，未能周詳地考慮到其與漢字排版間的差異，嚴重影響美觀度，造成網頁設計師的誤用，更使得內容編者無從依照語意正確使用字級元素。',
 		],
 		[
+			'name'     => 'Git',
+			'HomePage' => 'http://git-scm.com/',
+			'Licence'  => 'http://git-scm.com/about/free-and-open-source',
+			'describe' => 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.',
+		],
+		[
 			'name'     => 'Github',
 			'HomePage' => 'https://github.com/',
 			'Licence'  => 'https://help.github.com/articles/github-terms-of-service',
