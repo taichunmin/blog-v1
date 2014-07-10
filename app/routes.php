@@ -16,16 +16,18 @@ Route::get('/', function()
 	return View::make('about-me');
 });
 
-Route::get('/about-me', function(){
+Route::get('about-me', function(){
 	return View::make('about-me');
 });
 
-Route::get('/experiences', function(){
+Route::get('experiences', function(){
 	return View::make('experiences');
 });
 
-Route::get('/about-site', function(){
+Route::get('about-site', function(){
 	return View::make('about-site');
 });
 
-Route::get('/skills', 'SkillsController@getIndex');
+// Route::get('works/(:all?)', 'WorksController@getIndex');
+
+Route::get('skills', 'SkillsController@getIndex');
