@@ -24,4 +24,8 @@ Route::get('/experiences', function(){
 	return View::make('experiences');
 });
 
+Route::get('/about-site', function(){
+	return View::make('about-site');
+});
+
 Route::get('/skills', 'SkillsController@getIndex');
