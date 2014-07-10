@@ -57,15 +57,12 @@ class SkillsController extends \BaseController {
 	{
 		if( empty($skill['name']) || empty($skill['data']) )
 			return $skill;
-		usort( $skill['data'], array($this, 'sortSkillCmp') );
+		usort( $skill['data'], function( $a, $b ){
+			if( $a[1] != $b[1] )
+				return $b[1] - $a[1];
+			return strcmp( strtolower($a[0]), strtolower($b[0]) );
+		} );
 		return $skill;
-	}
-
-	private function sortSkillCmp( $a, $b )
-	{
-		if( $a[1] != $b[1] )
-			return $b[1] - $a[1];
-		else return strcmp( strtolower($a[0]), strtolower($b[0]) );
 	}
 
 }
