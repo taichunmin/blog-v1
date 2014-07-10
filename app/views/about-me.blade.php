@@ -53,6 +53,7 @@
 				</div>
 			</div>
 		</div>
+@if (Request::is('about-me'))
 		<div class="container">
 			<h1>OTHER LINKS</h1>
 			<div class="table-responsive" id="about-me-links">
@@ -66,6 +67,7 @@
 				</table>
 			</div>
 		</div>
+@endif
 	</div>
 @stop
 
