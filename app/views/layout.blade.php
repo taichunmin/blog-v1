@@ -26,6 +26,7 @@
     @show
   </head>
   <body>
+  @include('google-analytics')
   @include('navbar')
 
   <div class="container-fluid">
