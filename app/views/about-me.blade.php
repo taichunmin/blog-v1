@@ -1,6 +1,27 @@
 @extends('layout')
 
 @section('content-fluid')
+<?php
+	$otherlinks = [
+		['Email','taichunmin@gmail.com'],
+		['Logdown','http://taichunmin.logdown.com/'],
+		['Pixnet','http://taichunmin.pixnet.net/'],
+		['Hackpad','https://hackpad.com/ep/profile/wk2EBYHTON5'],
+		['Slideshare','http://www.slideshare.net/taichunmin'],
+		['Aboutme','http://about.me/taichunmin'],
+		['Gravatar','http://en.gravatar.com/taichunmin'],
+		['Disqus','https://disqus.com/taichunmin/'],
+		['Openfoundry','http://www.openfoundry.org/tw/community/userprofile/taichunmin'],
+		['Wikipedia','http://zh.wikipedia.org/wiki/User:Taichunmin'],
+		['Gitbook','https://www.gitbook.io/@taichunmin'],
+		['Ruten','http://class.ruten.com.tw/user/index00.php?s=taichunmin'],
+		['巴哈姆特','http://home.gamer.com.tw/homeindex.php?owner=taichunmin'],
+		['SPOJ','http://www.spoj.com/users/taichunmin/'],
+	];
+	usort( $otherlinks, function($a,$b){
+		return strcmp( $a[0].$a[1], $b[0].$b[1] );
+	} );
+?>
 	<div class="row" id="about-me-row">
 		<div class="jumbotron">
 			<div class="container">
@@ -23,6 +44,19 @@
 						<a class="btn btn-lg" href="https://trello.com/taichunmin" target="_blank"><span class="fa fa-trello fa-2x fa-fw"></span></a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h1>OTHER LINKS</h1>
+			<div class="table-responsive" id="about-me-links">
+				<table class="table table-striped table-hover">
+@foreach ($otherlinks as $link)
+					<tr>
+						<th>{{{$link[0]}}}</th>
+						<td><a href="{{{$link[1]}}}" target="_blank">{{{$link[1]}}}</a></td>
+					</tr>
+@endforeach
+				</table>
 			</div>
 		</div>
 	</div>
@@ -48,6 +82,9 @@
 		}
 		#about-me-row{
 			margin-top: -9px;
+		}
+		#about-me-links th{
+			text-align: right;
 		}
 	</style>
 @stop

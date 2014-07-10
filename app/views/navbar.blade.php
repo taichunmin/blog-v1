@@ -18,7 +18,6 @@
         <li><a href="{{ url('/experiences') }}"><span class="fa fa-history fa-fw"></span> 經歷</a></li>
         <li><a href="{{ url('/skills') }}"><span class="fa fa-bar-chart-o fa-rotate-90 fa-fw"></span> 技能</a></li>
         <li><a href="{{ url('/works') }}"><span class="fa fa-file-code-o fa-fw"></span> 作品集</a></li>
-        <li><a href="{{ url('/contact') }}"><span  class="fa fa-phone-square fa-fw"></span> 聯絡</a></li>
         <li><a href="{{ url('/about-site') }}"><span class="fa fa-puzzle-piece fa-fw"></span> 關於本站</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
