@@ -35,7 +35,7 @@ $works = [
 			    <h4>{{{ $work['title'] }}}</h4>
 			    <p>{{ $work['describe'] }}</p>
 			    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#work-modal-{{ $work_id }}">More <span class="glyphicon glyphicon-chevron-right"></span></button>
-			    <a href="http://nchuir.lib.nchu.edu.tw/" class="btn btn-primary">Website &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+			    <a href="http://nchuir.lib.nchu.edu.tw/" target="_blank" class="btn btn-primary">Website &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
 			  </div>
 			</div>
 			<div class="modal fade" id="work-modal-{{ $work_id }}">
@@ -50,7 +50,7 @@ $works = [
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <a href="{{ $work['picasaweb'] }}" class="btn btn-primary" target="_blank">查看全部 <span class="glyphicon glyphicon-picture"></span></a>
+			        <a href="{{ $work['picasaweb'] }}" class="btn btn-primary" target="_blank">查看相簿 <span class="glyphicon glyphicon-picture"></span></a>
 			      </div>
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
