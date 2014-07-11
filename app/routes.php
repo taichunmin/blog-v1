@@ -28,6 +28,8 @@ Route::get('about-site', function(){
 	return View::make('about-site');
 });
 
-// Route::get('works/(:all?)', 'WorksController@getIndex');
+Route::get('works', function(){
+	return View::make('works');
+});
 
 Route::get('skills', 'SkillsController@getIndex');
