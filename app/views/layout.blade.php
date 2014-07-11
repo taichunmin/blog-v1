@@ -7,13 +7,13 @@
     <title>taichunmin.idv.tw</title>
 
     <!-- han -->
-    <link href="Han-2.3.0/han.css" rel="stylesheet">
+    <link href="{{asset('Han-2.3.0/han.css')}}" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('bootstrap-3.2.0/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{asset('font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,8 +41,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="Han-2.3.0/js/han.js"></script>
-    <script src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script src="{{asset('Han-2.3.0/js/han.js')}}"></script>
+    <script src="{{asset('bootstrap-3.2.0/js/bootstrap.min.js')}}"></script>
   @show
   </body>
 </html>
