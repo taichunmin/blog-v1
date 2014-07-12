@@ -13,14 +13,43 @@
 
 @section('content')
 <?php
+$images_base = 'images/works/';
 $works = [
 	[
 		'title'     => '中興大學機構典藏',
-		'image'     => 'images/works/中興大學機構典藏.png',
+		'image'     => '中興大學機構典藏0.png',
 		'describe'  => '<a href="http://tair.org.tw/" target="_blank"><u>臺灣學術機構典藏系統</u></a>維護與功能新增',
 		'website'   => ['http://nchuir.lib.nchu.edu.tw/', 'Website'],
-		'flashvars' => 'host=picasaweb.google.com&captions=1&noautoplay=1&hl=zh_TW&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101162932021298598667%2Falbumid%2F6034821175115819729%3Falt%3Drss%26kind%3Dphoto%26hl%3Dzh_TW',
-		'picasaweb' => 'https://picasaweb.google.com/101162932021298598667/tAnEAJ?authuser=0&feat=flashalbum',
+		'img'       => [
+			[
+				'src'     => '中興大學機構典藏0.png',
+				'caption' => '<p>中興大學機構典藏 首頁</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏1.png',
+				'caption' => '<p>從校內碩博士論文系統轉檔匯入</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏2.png',
+				'caption' => '<p>從教育部 GRB 系統轉檔匯入</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏3.png',
+				'caption' => '<p>替教師著作排行加上簡易的姓名權威</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏4.png',
+				'caption' => '<p>替系統維護所寫的需多小工具程式</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏5.png',
+				'caption' => '<p>替系統加上 Google Analytics</p>',
+			],
+			[
+				'src'     => '中興大學機構典藏6.png',
+				'caption' => '<p>社群網站推薦按鈕，檢視 DOI 紀錄，匯出 EndNote、純文字格式等功能。</p>',
+			],
+		],
 	],
 ];
 ?>
@@ -29,7 +58,7 @@ $works = [
 		<div class="col-md-4 col-sm-6">
 			<div class="panel panel-default">
 			  <div class="panel-heading">
-			  	<img src="{{ asset( $work['image'] ) }}" alt="">
+			  	<img src="{{ asset( $images_base.$work['image'] ) }}">
 			  </div>
 			  <div class="panel-body text-center">
 			    <h4>{{{ $work['title'] }}}</h4>
@@ -45,12 +74,38 @@ $works = [
 			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 			        <h4 class="modal-title">作品集：{{{ $work['title'] }}}</h4>
 			      </div>
-			      <div class="modal-body background-loader">
-			        <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="100%" height="675" flashvars="{{ $work['flashvars'] }}" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+			      <div class="modal-body">
+			        <div id="work-carousel-{{ $work_id }}" class="carousel slide" data-ride="carousel" data-interval="false">
+			          <!-- Indicators -->
+			          <ol class="carousel-indicators">
+@foreach ($work['img'] as $item_id => $item)
+			            <li data-target="#work-carousel-{{ $work_id }}" data-slide-to="{{ $item_id }}"{{ ($item_id==0) ? ' class="active"' : '' }}></li>
+@endforeach
+			          </ol>
+
+			          <!-- Wrapper for slides -->
+			          <div class="carousel-inner">
+@foreach ($work['img'] as $item_id => $item)
+			            <div class="item{{ ($item_id==0)?' active':'' }}">
+			              <img src="{{ asset( $images_base.$item['src'] ) }}">
+			              <div class="carousel-caption">{{ $item['caption'] }}</div>
+			            </div>
+@endforeach
+			          </div>
+
+			          <!-- Controls -->
+			          <a class="left carousel-control" href="#work-carousel-{{ $work_id }}" role="button" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left"></span>
+			          </a>
+			          <a class="right carousel-control" href="#work-carousel-{{ $work_id }}" role="button" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right"></span>
+			          </a>
+			        </div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <a href="{{ $work['picasaweb'] }}" class="btn btn-primary" target="_blank">查看相簿 <span class="glyphicon glyphicon-picture"></span></a>
+			        <button type="button" class="btn btn-info caption-toggle">切換圖片說明</button>
+			        <a href="http://nchuir.lib.nchu.edu.tw/" target="_blank" class="btn btn-primary">Website &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
 			      </div>
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
@@ -88,5 +143,26 @@ $works = [
 			background-repeat: no-repeat;
 			background-position: center center;
 		}
+		.carousel-caption{
+			/* Fallback for web browsers that don't support RGBa */
+			background-color: rgb(0, 0, 0);
+			/* RGBa with 0.6 opacity */
+			background-color: rgba(0, 0, 0, 0.6);
+			/* For IE 5.5 - 7*/
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+			/* For IE 8*/
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+		}
 	</style>
+@stop
+
+@section('js')
+	@parent
+	<script>
+		$(function(){
+			$('.work-summary').delegate('.caption-toggle','click',function(){
+				$('.carousel-caption').toggle();
+			});
+		});
+	</script>
 @stop
