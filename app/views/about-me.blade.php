@@ -67,6 +67,8 @@
 				</table>
 			</div>
 		</div>
+@else
+		<img src="{{asset('images/taichunmin.idv.tw.png')}}" class="center-block">
 @endif
 	</div>
 @stop
