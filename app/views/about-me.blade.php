@@ -29,7 +29,7 @@
 		return strcmp( strtolower($a[0].$a[1]), strtolower($b[0].$b[1]) );
 	} );
 ?>
-	<div class="row" id="about-me-row">
+	<div class="row">
 		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
@@ -39,7 +39,7 @@
 					</div>
 					<div class="col-sm-9">
 						<h1>和風信使</h1>
-						<p>從高中因為社團接觸 C++ 的 ACM 演算法世界，然後大學開始自學 PHP 以及網頁相關的技術。主要是後端工程師，前端略有涉略，美工超級不擅長，除了程式之外，還喜歡看小說，偶爾陪朋友玩遊戲，換句話說，死宅男一枚。</p>
+						<p class="lead">從高中因為社團接觸 C++ 的 ACM 演算法世界，然後大學開始自學 PHP 以及網頁相關的技術。主要是後端工程師，前端略有涉略，美工超級不擅長，除了程式之外，還喜歡看小說，偶爾陪朋友玩遊戲，宅男一枚。</p>
 						<p>請大家多多指教。</p>
 					</div>
 					<div id="about-me-social" class="col-sm-9 col-sm-offset-3">
@@ -53,22 +53,24 @@
 				</div>
 			</div>
 		</div>
+@stop
+
+@section('content')
 @if (Request::is('about-me'))
-		<div class="container">
-			<h1>OTHER LINKS</h1>
-			<div class="table-responsive" id="about-me-links">
-				<table class="table table-striped table-hover">
+		<h1>OTHER LINKS</h1>
+		<div class="table-responsive" id="about-me-links">
+			<table class="table table-striped table-hover">
 @foreach ($otherlinks as $link)
-					<tr>
-						<th>{{{$link[0]}}}</th>
-						<td><a href="{{{$link[1]}}}" target="_blank">{{{$link[1]}}}</a></td>
-					</tr>
+				<tr>
+					<th>{{{$link[0]}}}</th>
+					<td><a href="{{{$link[1]}}}" target="_blank">{{{$link[1]}}}</a></td>
+				</tr>
 @endforeach
-				</table>
-			</div>
+			</table>
 		</div>
 @else
-		<img src="{{asset('images/taichunmin.idv.tw.png')}}" class="center-block">
+		<h2>網站的 QR Code</h2>
+		<img src="{{asset('images/taichunmin.idv.tw.png')}}">
 @endif
 	</div>
 @stop
@@ -92,9 +94,6 @@
 		}
 		#about-me-social a.btn:hover{
 			border: 2px solid #000;
-		}
-		#about-me-row{
-			margin-top: -9px;
 		}
 		#about-me-links th{
 			text-align: right;

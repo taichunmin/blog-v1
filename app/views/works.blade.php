@@ -1,10 +1,10 @@
 @extends('layout')
 
 @section('content-fluid')
-	<div class="row" id="works-row">
+	<div class="row">
 		<div class="jumbotron">
 			<div class="container">
-				<h1>作品集</h1>
+				<h1><span class="fa fa-file-code-o fa-fw"></span> 作品集</h1>
 				<p class="lead">包含網頁，小工具，程式作業以及其他作品。</p>
 			</div>
 		</div>
@@ -112,7 +112,7 @@ $works = [
 	[
 		'title'     => '中興大學興湖記事',
 		'image'     => '中興大學興湖記事0.png',
-		'describe'  => '網站從舊外包系統遷移至 Joomla 2.5',
+		'describe'  => '網站從舊系統遷移至 Joomla 2.5',
 		'website'   => ['http://archive.nchu.edu.tw/', '網站'],
 		'img'       => [
 			[
@@ -216,9 +216,6 @@ $works = [
 @section('css')
 	@parent
 	<style>
-		#works-row{
-			margin-top: -9px;
-		}
 		.work-summary .panel-heading img{
 			width: 100%;
 			border-top-left-radius: 4px;
@@ -233,7 +230,7 @@ $works = [
 			padding: 0;
 		}
 		.work-summary .panel-body{
-			background-color: #ffe;
+			background-color: #f5f5f5;
 		}
 		.work-summary .panel-body h4{
 			margin-top: 0;

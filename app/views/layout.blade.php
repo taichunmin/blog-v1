@@ -30,7 +30,7 @@
   @include('navbar')
 
   <div class="container-fluid">
-  @yield('content-fluid', '')
+  @yield('content-fluid', '<div style="height:9px">&nbsp;</div>')
   </div>
 
   <div class="container">

@@ -1,7 +1,22 @@
 @extends('layout')
 
-@section('content')
+@section('content-fluid')
+<div class="row">
+	<div class="jumbotron">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-fire"></span> 本站授權</h1>
+			<p>本網站是使用 <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a> 的開放原始碼軟體。</p>
+			<p>The website is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
+			<p>
+			Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp;&nbsp;&nbsp;&nbsp;TAI, CHUN-MIN &lt;taichunmin@gmail.com&gt;.
+			</p>
+			<p style="margin:0">網站原始碼：<a href="https://github.com/taichunmin/taichunmin.idv.tw" target="_blank">taichunmin/taichunmin.idv.tw (Github)</a></p>
+		</div>
+	</div>
+</div>
+@stop
 
+@section('content')
 <?php
 	$openSources = [
 		[
@@ -54,20 +69,6 @@
 		],
 	];
 ?>
-
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;本站授權</h3>
-  </div>
-  <div class="panel-body">
-  	<p>本網站是使用 <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a> 的開放原始碼軟體。</p>
-    <p>The website is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
-    <p>
-    	Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp;&nbsp;&nbsp;&nbsp;TAI, CHUN-MIN &lt;taichunmin@gmail.com&gt;.
-    </p>
-    <p style="margin:0">網站原始碼：<a href="https://github.com/taichunmin/taichunmin.idv.tw" target="_blank">taichunmin/taichunmin.idv.tw (Github)</a></p>
-  </div>
-</div>
 
 <div class="panel panel-primary" id="openSources">
   <div class="panel-heading">
