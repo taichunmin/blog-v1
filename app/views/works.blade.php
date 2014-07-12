@@ -19,7 +19,7 @@ $works = [
 		'title'     => '中興大學機構典藏',
 		'image'     => '中興大學機構典藏0.png',
 		'describe'  => '<a href="http://tair.org.tw/" target="_blank"><u>臺灣學術機構典藏系統</u></a>維護與功能新增',
-		'website'   => ['http://nchuir.lib.nchu.edu.tw/', 'Website'],
+		'website'   => ['http://nchuir.lib.nchu.edu.tw/', '網站'],
 		'img'       => [
 			[
 				'src'     => '中興大學機構典藏0.png',
@@ -51,6 +51,37 @@ $works = [
 			],
 		],
 	],
+	[
+		'title'     => '中興大學 DSpace 系統',
+		'image'     => '中興大學DSpace系統0.png',
+		'describe'  => '<a href="http://www.dspace.org/" target="_blank"><u>DSpace</u></a>系統建置及遷移 (Migrate)',
+		'img'       => [
+			[
+				'src'     => '中興大學DSpace系統0.png',
+				'caption' => '<p>中興大學 DSpace 系統首頁</p>',
+			],
+			[
+				'src'     => '中興大學DSpace系統1.png',
+				'caption' => '<p>繁體中文翻譯<a href="https://github.com/DSpace/dspace-api-lang/commit/ac0931c1567e541a831fd4ccf55f71ad4c13b7b1">https://github.com/DSpace/dspace-api-lang/commit/ac0931c1567e541a831fd4ccf55f71ad4c13b7b1</a></p>',
+			],
+			[
+				'src'     => '中興大學DSpace系統2.png',
+				'caption' => '<p>繁體中文翻譯<a href="https://github.com/DSpace/dspace-api-lang/commit/ac0931c1567e541a831fd4ccf55f71ad4c13b7b1">https://github.com/DSpace/dspace-api-lang/commit/ac0931c1567e541a831fd4ccf55f71ad4c13b7b1</a></p>',
+			],
+			[
+				'src'     => '中興大學DSpace系統3.png',
+				'caption' => '<p>遷移舊機典系統的工具，匯出成 DSpace 的 Simple Archive Format，以便直接匯入 DSpace 系統。</p>',
+			],
+			[
+				'src'     => '中興大學DSpace系統4.png',
+				'caption' => '<p>匯入文件時所寫的輔助小程式 (Bash)。</p>',
+			],
+			[
+				'src'     => '中興大學DSpace系統5.png',
+				'caption' => '<p>總共移轉的資料量</p>',
+			],
+		],
+	],
 ];
 ?>
 	<div class="row work-summary">
@@ -64,7 +95,9 @@ $works = [
 			    <h4>{{{ $work['title'] }}}</h4>
 			    <p>{{ $work['describe'] }}</p>
 			    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#work-modal-{{ $work_id }}">More <span class="glyphicon glyphicon-chevron-right"></span></button>
-			    <a href="http://nchuir.lib.nchu.edu.tw/" target="_blank" class="btn btn-primary">Website &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+@if( !empty( $work['website'] ) )
+			    <a href="{{ $work['website'][0] }}" target="_blank" class="btn btn-primary">{{ $work['website'][1] }} &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+@endif
 			  </div>
 			</div>
 			<div class="modal fade" id="work-modal-{{ $work_id }}">
@@ -105,7 +138,9 @@ $works = [
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			        <button type="button" class="btn btn-info caption-toggle">切換圖片說明</button>
-			        <a href="http://nchuir.lib.nchu.edu.tw/" target="_blank" class="btn btn-primary">Website &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+@if( !empty( $work['website'] ) )
+			        <a href="{{ $work['website'][0] }}" target="_blank" class="btn btn-primary">{{ $work['website'][1] }} &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+@endif
 			      </div>
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
@@ -152,6 +187,9 @@ $works = [
 			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 			/* For IE 8*/
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+		}
+		.carousel-inner img{
+			margin: 0 auto;
 		}
 	</style>
 @stop
