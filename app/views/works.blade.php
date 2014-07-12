@@ -82,6 +82,33 @@ $works = [
 			],
 		],
 	],
+	[
+		'title'     => '世界大學網路排名',
+		'image'     => '世界大學網路排名0.png',
+		'describe'  => '<a href="http://www.webometrics.info/" target="_blank"><u>Ranking Web of Universities</u></a> 輔助工具',
+		'img'       => [
+			[
+				'src'     => '世界大學網路排名0.png',
+				'caption' => '<p>世界大學網路排名網站 [<a href="http://zh.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E5%A4%A7%E5%AD%B8%E7%B6%B2%E8%B7%AF%E6%8E%92%E5%90%8D" target="_blank">維基百科</a>]</p>',
+			],
+			[
+				'src'     => '世界大學網路排名1.png',
+				'caption' => '<p>每天定時抓取各大學機構典藏的數量資料。</p>',
+			],
+			[
+				'src'     => '世界大學網路排名2.png',
+				'caption' => '<p>可以用圖表顯示趨勢，追蹤其他學校的機構典藏狀況。</p>',
+			],
+			[
+				'src'     => '世界大學網路排名3.png',
+				'caption' => '<p>圖表套件的應用，將滑鼠移動到圖表上可查看詳細數值。</p>',
+			],
+			[
+				'src'     => '世界大學網路排名4.png',
+				'caption' => '<p>中興大學的排名</p>',
+			],
+		],
+	],
 ];
 ?>
 	<div class="row work-summary">
