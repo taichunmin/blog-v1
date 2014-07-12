@@ -196,6 +196,9 @@ $works = [
 			width: 100%;
 			padding: 0;
 		}
+		.work-summary .panel-body{
+			background-color: #ffe;
+		}
 		.work-summary .panel-body h4{
 			margin-top: 0;
 		}
