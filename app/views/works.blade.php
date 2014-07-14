@@ -52,6 +52,61 @@ $works = [
 		],
 	],
 	[
+		'title'     => '個人本體論新聞推薦',
+		'image'     => '個人本體論新聞推薦0.png',
+		'describe'  => '大學畢業專題，參加校外比賽得銅牌',
+		'img'       => [
+			[
+				'src'     => '個人本體論新聞推薦0.png',
+				'caption' => '<p>系上畢業專題比賽時的展示頁面<br/>左邊的是專案的簡介，右側是使用 jQueryMobile 所寫的頁面。<br />(Android APP 是後來去參加校外比賽時才寫的)</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦1.png',
+				'caption' => '<p>系上畢業專題比賽時所做的海報</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦2.png',
+				'caption' => '<p>jQueryMobile 的登入及註冊頁面</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦3.png',
+				'caption' => '<p>系上畢業專題比賽入圍決賽的名單</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦4.png',
+				'caption' => '<p>使用 Git 進行程式碼的版本管理，此為 Github 程式的專案截圖。</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦5.png',
+				'caption' => '<p>此為新聞推薦功能說明用頁面，詳細列出各項推薦參數及結果。</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦6.png',
+				'caption' => '<p>此為瀏覽所有新聞的介面，採用清單呈現。</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦7.png',
+				'caption' => '<p>資料庫內所抓取的新聞，此為 HeidiSQL 程式連至資料庫的截圖。</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦8.png',
+				'caption' => '<p>此為後來參加校外比賽時所寫的 Android App，該校外比賽榮獲銅牌的佳績。</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦9.png',
+				'caption' => '<p>由左到右依序為：<br>推薦的參數設定、將新聞斷詞分析後的結果、Android App 內新聞的瀏覽頁面</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦10.png',
+				'caption' => '<p>校外比賽時，組員和學長的合照</p>',
+			],
+			[
+				'src'     => '個人本體論新聞推薦11.png',
+				'caption' => '<p>校外比賽的銅牌獎狀</p>',
+			],
+		],
+	],
+	[
 		'title'     => '中興大學 DSpace 系統',
 		'image'     => '中興大學DSpace系統0.png',
 		'describe'  => '<a href="http://www.dspace.org/" target="_blank"><u>DSpace</u></a>系統建置及遷移 (Migrate)',
@@ -172,7 +227,7 @@ $works = [
 	[
 		'title'     => '前瞻無線資訊網路實驗室',
 		'image'     => '前瞻無線資訊網路實驗室0.png',
-		'describe'  => '與綠能相關的網站 (完整度均不高)。',
+		'describe'  => '與綠能相關的網站 (完整度均不高)',
 		'img'       => [
 			[
 				'src'     => '前瞻無線資訊網路實驗室0.png',
@@ -208,6 +263,15 @@ $works = [
 ?>
 	<div class="row work-summary">
 @foreach ($works as $work_id => $work)
+@if( $work_id )
+	@if ( $work_id % 6 == 0 )
+		<div class="clearfix hidden-xs"></div>
+	@elseif ( $work_id % 3 == 0 )
+		<div class="clearfix hidden-xs hidden-sm"></div>
+	@elseif ( $work_id % 2 == 0 )
+		<div class="clearfix visible-sm-block"></div>
+	@endif
+@endif
 		<div class="col-md-4 col-sm-6">
 			<div class="panel panel-default">
 			  <div class="panel-heading">
