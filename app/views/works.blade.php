@@ -323,7 +323,7 @@ $works = [
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-info caption-toggle">切換圖片說明</button>
+			        <button type="button" class="btn btn-info caption-toggle">開關圖片說明</button>
 @if( !empty( $work['website'] ) )
 			        <a href="{{ $work['website'][0] }}" target="_blank" class="btn btn-primary">{{ $work['website'][1] }} &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
 @endif
