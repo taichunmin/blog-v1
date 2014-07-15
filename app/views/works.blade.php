@@ -377,6 +377,9 @@ $works = [
 		.carousel-inner img{
 			margin: 0 auto;
 		}
+		.carousel-indicators{
+			white-space: nowrap;
+		}
 	</style>
 @stop
 
@@ -385,7 +388,7 @@ $works = [
 	<script>
 		$(function(){
 			$('.work-summary').delegate('.caption-toggle','click',function(){
-				$('.carousel-caption').toggle();
+				$('.carousel-caption,.carousel-indicators').toggle();
 			});
 		});
 	</script>
