@@ -32,4 +32,9 @@ Route::get('works', function(){
 	return View::make('works');
 });
 
+Route::get('my-ip', function(){
+	$ip = @$_SERVER['HTTP_CLIENT_IP'] ?: (@$_SERVER['HTTP_X_FORWARDED_FOR'] ?: @$_SERVER['REMOTE_ADDR']);
+	return $ip;
+});
+
 Route::get('skills', 'SkillsController@getIndex');
